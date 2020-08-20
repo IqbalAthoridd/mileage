@@ -24,5 +24,28 @@ module.exports = {
 
         }
         return hasil
+    },
+
+    hitungJarak: (hasil) => {
+        let kecepatan = 6
+        let jarak = 0
+        let recentMenit = 0
+        let sisaMenit = 0
+
+        for (i = 1; i <= hasil.menit; i++) {
+
+            jarak += kecepatan * 60
+            if (i === 5) {
+                kecepatan += 2
+
+            } else if (i === 15 || i === recentMenit + 10) {
+                recentMenit = i
+                kecepatan += 1
+            }
+        }
+        sisaMenit = hasil.menit - recentMenit
+        sisaMenit = sisaMenit * 60 + hasil.detik
+        jarak = jarak + kecepatan * sisaMenit
+        console.log(`jarak yang di tempuh adalah ${jarak / 1000} km`)
     }
 }
