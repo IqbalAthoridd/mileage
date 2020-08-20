@@ -17,8 +17,7 @@ let recentMenit = 0
 let sisaMenit = 0
 
 
-const hasil = data.coverWaktu(jamAwal, jamAkhir)
-
+const hasil = data.convertWaktu(jamAwal, jamAkhir)
 for (i = 1; i <= hasil.menit; i++) {
 
     jarak += kecepatan * 60
@@ -28,11 +27,9 @@ for (i = 1; i <= hasil.menit; i++) {
     } else if (i === 15 || i === recentMenit + 10) {
         recentMenit = i
         kecepatan += 1
-        console.log(recentMenit)
     }
 }
-console.log(jarak)
 sisaMenit = hasil.menit - recentMenit
 sisaMenit = sisaMenit * 60 + hasil.detik
 jarak = jarak + kecepatan * sisaMenit
-console.log(`jarak yang di tempu adalah ${jarak} meter`)
+console.log(`jarak yang di tempuh adalah ${jarak / 1000} km`)

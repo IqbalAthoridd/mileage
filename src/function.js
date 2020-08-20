@@ -1,5 +1,5 @@
 module.exports = {
-    coverWaktu: (jamA, jamB) => {
+    convertWaktu: (jamA, jamB) => {
 
         let jam = jamB.jam - jamA.jam
         let menit = jamA.menit - jamB.menit
