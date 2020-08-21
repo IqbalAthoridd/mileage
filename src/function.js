@@ -63,7 +63,7 @@ module.exports = {
         menit = jam * 60 - menit
         detik = menit * 60 - detik
 
-        for (i = jamA.detik; i <= detik; i++) {
+        for (i = 1; i <= detik; i++) {
             jarak += kecepatan
             if (i === 300) {
                 recentDetik = i
@@ -76,9 +76,9 @@ module.exports = {
             }
 
         }
-        sisaDetik = detik - recentDetik
-        sisaDetik = sisaDetik * kecepatan
-        jarak = jarak + sisaDetik
+        // sisaDetik = detik - recentDetik
+        // sisaDetik = sisaDetik * kecepatan
+        // jarak = jarak + sisaDetik
         console.log(`jarak yang di tempuh adalah ${jarak / 1000} km`)
 
     }
