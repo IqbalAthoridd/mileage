@@ -76,9 +76,6 @@ module.exports = {
             }
 
         }
-        // sisaDetik = detik - recentDetik
-        // sisaDetik = sisaDetik * kecepatan
-        // jarak = jarak + sisaDetik
         console.log(`jarak yang di tempuh adalah ${jarak / 1000} km`)
 
     }
