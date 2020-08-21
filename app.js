@@ -12,5 +12,12 @@ let jamAkhir = {
 }
 
 const hasil = data.convertWaktu(jamAwal, jamAkhir)
+//cara1
+console.log("cara1")
+data.hitungJarak2(jamAwal, jamAkhir)
+
+
+//Cara2
+console.log("cara 2")
 data.hitungJarak(hasil)
 
