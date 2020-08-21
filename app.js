@@ -14,7 +14,7 @@ let jamAkhir = {
 // const hasil = data.convertWaktu(jamAwal, jamAkhir)
 
 //cara1
-data.hitungJarak2(jamAwal, jamAkhir)
+data.hitungJarak(jamAwal, jamAkhir)
 
 
 //Cara2
