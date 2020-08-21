@@ -11,13 +11,13 @@ let jamAkhir = {
     detik: 0
 }
 
-const hasil = data.convertWaktu(jamAwal, jamAkhir)
+// const hasil = data.convertWaktu(jamAwal, jamAkhir)
+
 //cara1
-console.log("cara1")
 data.hitungJarak2(jamAwal, jamAkhir)
 
 
 //Cara2
-console.log("cara 2")
-data.hitungJarak(hasil)
+// console.log("cara 2")
+// data.hitungJarak(hasil)
 
